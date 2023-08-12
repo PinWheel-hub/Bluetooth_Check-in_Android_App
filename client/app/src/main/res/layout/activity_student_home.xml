@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72C3D2DA"
+    tools:context=".StudentHomeActivity"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="13sp"
+            android:text="学校："
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/User_scollege">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="13sp"
+            android:text="学号："
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/User_snumber">
+        </TextView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="13sp"
+            android:text="姓名:"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/User_sname">
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_schange"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/User_sname"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#E68D5D"
+        android:text="修改个人信息"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_saddcourse"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="加入课程"
+        android:layout_gravity="center"
+        android:background="#71CAE1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@+id/btn_schange"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:id="@+id/scourse_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

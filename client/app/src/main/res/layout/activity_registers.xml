@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72D4F3DF"
+    tools:context=".Registers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/title_bar"/>
+
+        <TextView
+            android:id="@+id/tv_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="同学您好！欢迎注册个人信息！"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/tv_rsusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请填写用户名(常用手机号)"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/tv_rs"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_rsusername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:inputType="number"
+            android:background="@drawable/bg_username"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/tv_rsusername"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_rspassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请设置密码"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/et_rsusername"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_rspassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:layout_below="@+id/tv_rspassword"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_password"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_rscollege"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请填写您所在的学校"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/et_rspassword"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_rscollege"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/bg_username"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/tv_rscollege"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_rsnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请填写您的学号"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/et_rscollege"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_rsnumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:inputType="number"
+            android:background="@drawable/bg_username"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/tv_rsnumber"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_rsname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请填写您的姓名"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/et_rsnumber"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_rsname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/bg_username"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/tv_rsname"
+            android:layout_marginTop="15dp"
+            />
+
+        <Button
+            android:id="@+id/btn_rsfinish"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="注册完成，我要登录"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_register"
+            android:layout_below="@id/tv_rsname"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_rsw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="欢迎您使用本款APP！"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_below="@+id/btn_rsfinish"
+            android:textSize="20sp"/>
+
+        />
+    </LinearLayout>
+
+</ScrollView>

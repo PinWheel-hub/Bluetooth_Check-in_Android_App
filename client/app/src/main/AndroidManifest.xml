@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.app1">
+
+    <!-- 应用使用蓝牙的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <!--启动设备发现或操作蓝牙设置的权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!--位置权限-->
+    <!--Android 10以上系统，需要ACCESS_FINE_LOCATION-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--Android 9以及以下系统，需要ACCESS_FINE_LOCATION-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".MyApplication"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App1">
+        <activity
+            android:name=".SkqRecordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StudentEachCourseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TkqEachCourseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TkqRecordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StuListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChangeClassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TeacherEachCourseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddClassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SChangeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TchangeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StudentHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CreateClassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TeacherHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Registers"
+            android:exported="true" />
+        <activity
+            android:name=".Registert"
+            android:exported="true" />
+        <activity
+            android:name=".Logins"
+            android:exported="true" />
+        <activity
+            android:name=".Logint"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

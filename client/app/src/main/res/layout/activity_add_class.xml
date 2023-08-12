@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72D5D2D2"
+    tools:context=".AddClassActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+    <TextView
+        android:id="@+id/tv_sadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同学您好！欢迎添加课程！"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tv_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入课程代码："
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/tv_sadd"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_sclasscode"
+            android:layout_width="200dp"
+            android:layout_height="27dp"
+            android:layout_below="@+id/tv_input"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/bg_username"
+          />
+
+        <Button
+            android:id="@+id/btn_ssearchcode"
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_input"
+            android:layout_marginTop="10dp"
+
+            android:text="搜索"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:background="#6ED541"
+      />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_sfindcode"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sclasscode"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_marginLeft="10dp"
+            android:text="课程代码"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/et_sfindcode"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sclasscode"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_sfindname"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sclasscode"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_marginLeft="10dp"
+            android:text="课程名称"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/et_sfindname"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sclasscode"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_sfindteacher"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sfindname"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_marginLeft="10dp"
+            android:text="任课教师"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/et_sfindteacher"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sfindname"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_sfindnum"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sfindname"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_marginLeft="10dp"
+            android:text="教务代码"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/et_sfindnum"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sfindname"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_sfindterm"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sfindteacher"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_marginLeft="10dp"
+            android:text="开课学期"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/et_sfindterm"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sfindteacher"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_sfindbluetooth"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sfindteacher"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_marginLeft="10dp"
+            android:text="教师蓝牙"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/et_sfindbluetooth"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sfindterm"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_saddclass"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_sfindbluetooth"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#E16666"
+        android:text="添加该课程"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+        />
+
+</LinearLayout>

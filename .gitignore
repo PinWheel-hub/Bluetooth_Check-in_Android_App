@@ -1,0 +1,12 @@
+*.iml
+*.gradle
+client/local.properties
+*/.idea/
+*.DS_Store
+client/build
+client/captures
+*.externalNativeBuild
+*.cxx
+client/local.properties
+*/__pycache__/
+*/*/__pycache__/

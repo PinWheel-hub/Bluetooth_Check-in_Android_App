@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72D5D2D2"
+    tools:context=".StudentEachCourseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_bar"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:text="课程名称"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/SKCName">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:text="课程代码"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/SKCCode">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="任课教师"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/SKCteacher">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:text="教务代码"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/SKCnum">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:text="开课学期"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/SKCterm">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:text="教师蓝牙"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/SKCBluetooth">
+            </TextView>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_studentsign"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#B0B0B0"
+            android:onClick="signIn"
+            android:text="考勤签到"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_QueryKaoQin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#BC90ED"
+            android:textColor="#FFFFFF"
+            android:text="本课程考勤记录"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_dropout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="退出该课程"
+            android:background="#E37360"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最新签到结果："
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <ListView
+            android:id="@+id/lv_res"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_sblank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/btn_dropout"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

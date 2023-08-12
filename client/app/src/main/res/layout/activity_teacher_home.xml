@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72C3D2DA"
+    tools:context=".TeacherHomeActivity"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#72C3D2DA"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:text="学校："
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/User_tcollege">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:text="工号："
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/User_tnumber">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:text="姓名:"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/User_tname">
+            </TextView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_marginTop="3dp">
+            <Button
+                android:id="@+id/btn_tchange"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/User_sname"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#E68D5D"
+                android:text="修改个人信息"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_createclass"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="创建课程"
+                android:layout_gravity="center"
+                android:background="#71CAE1"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_below="@+id/btn_schange"
+                android:layout_marginTop="10dp"/>
+
+        <ListView
+        android:id="@+id/tcourse_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

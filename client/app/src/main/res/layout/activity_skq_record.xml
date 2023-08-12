@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72C3D2DA"
+    tools:context=".SkqRecordActivity"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="13sp"
+            android:text="姓名："
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/skqrecord_name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="13sp"
+            android:text="学号:"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/skqrecord_number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="13sp"
+            android:text="考勤成绩:"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/skqrecord_mark"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/skqrecord_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
