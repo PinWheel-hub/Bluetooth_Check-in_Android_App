@@ -8,5 +8,4 @@ client/captures
 *.externalNativeBuild
 *.cxx
 client/local.properties
-*/__pycache__/
-*/*/__pycache__/
+__pycache__/
